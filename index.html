@@ -6,39 +6,63 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Tip calculator app</title>
 </head>
 <body>
+  <header>
+    <figure>
+      <img src="images/logo.svg" alt="splitter logo"/>
+    </figure>
+  </header>
 
-  Bill
+  <main>
+    <div class="calculator">
+      <div class="calc-container">
+        <p>Bill</p>
+        <div class="bill-amount">
+          <img src="images/icon-dollar.svg" alt="dollar sign"/>
+          <input type=text>
+        </div>
+      </div>
+      <div class="calc-container">
+        <p>Select Tip %</p>
+        <button class="tip">5%</button>
+        <button class="tip">10%</button>
+        <button class="tip">15%</button>
+        <button class="tip">25%</button>
+        <button class="tip">50%</button>
+        <button class="tip">Custom</button>
+      </div>
+      <div class="calc-container">
+        <p>Number of People</p>
+        <div class="people-amount">
+          <img src="images/icon-person.svg" alt="person icon"/>
+          <input type=text>
+        </div>
+      </div>
+    </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div class="screen">
+      <div class="screen-container">
+        <div class="screen-text">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="tip-amount">
 
-  Number of People
+        </div>
+      </div>
+      <div class="screen-container">
+        <div class="screen-text">
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="total">
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </div>
+      </div>
+      <button class="reset">reset</button>
+    </div>
+  </main>
 </body>
 </html>
