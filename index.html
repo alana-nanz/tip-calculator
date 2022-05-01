@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
   <title>Tip calculator app</title>
 </head>
 <body>
@@ -17,26 +24,28 @@
 
   <main>
     <div class="calculator">
-      <div class="calc-container">
+      <div class="bill-container">
         <p>Bill</p>
-        <div class="bill-amount">
-          <img src="images/icon-dollar.svg" alt="dollar sign"/>
+        <div class="amount">
+          <img class="icon" src="images/icon-dollar.svg" alt="dollar sign"/>
           <input type=text>
         </div>
       </div>
-      <div class="calc-container">
+      <div class="tip-container">
         <p>Select Tip %</p>
-        <button class="tip">5%</button>
-        <button class="tip">10%</button>
-        <button class="tip">15%</button>
-        <button class="tip">25%</button>
-        <button class="tip">50%</button>
-        <button class="tip">Custom</button>
+        <div class="percent-container">
+          <button class="tip">5%</button>
+          <button class="tip">10%</button>
+          <button class="tip">15%</button>
+          <button class="tip">25%</button>
+          <button class="tip">50%</button>
+          <button class="tip">Custom</button>
+        </div>
       </div>
-      <div class="calc-container">
+      <div class="people-container">
         <p>Number of People</p>
-        <div class="people-amount">
-          <img src="images/icon-person.svg" alt="person icon"/>
+        <div class="amount">
+          <img class="icon" src="images/icon-person.svg" alt="person icon"/>
           <input type=text>
         </div>
       </div>
@@ -45,8 +54,8 @@
     <div class="screen">
       <div class="screen-container">
         <div class="screen-text">
-          <p>Tip Amount</p>
-          <p>/ person</p>
+          <p class="total-label">Tip Amount</p>
+          <p class="total-info">/ person</p>
         </div>
         <div class="tip-amount">
 
@@ -54,8 +63,8 @@
       </div>
       <div class="screen-container">
         <div class="screen-text">
-          <p>Total</p>
-          <p>/ person</p>
+          <p class="total-label"></pclass>Total</p>
+          <p class="total-info">/ person</p>
         </div>
         <div class="total">
 
