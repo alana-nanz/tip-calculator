@@ -7,6 +7,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding-bottom: 40px;
+    font-size: 16px;
 }
 
 p {
@@ -98,7 +99,7 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
-    width: 48%;
+    width: 45%;
     padding: 10px 0;
 }
 
@@ -123,6 +124,8 @@ button:hover {
 
 ::placeholder {
     color: #7b9a95;
+    padding-right: 10px;
+    font-size: 20px;
 }
 
 .custom:hover {
@@ -167,4 +170,16 @@ button:hover {
 .reset:hover {
     background-color: #9fe8df;
     cursor: pointer;
+}
+
+/*****TABLET & DESKTOP STYLES*****/
+@media only screen and (min-width: 768px) {
+    .calculator {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .calculator-container, .screen {
+        width: 45%;
+    }
 }
