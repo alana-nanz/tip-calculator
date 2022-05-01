@@ -6,20 +6,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 header {
     padding: 30px 0 15px;
 }
 
-main {
+.calculator {
     background-color: white;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4px 20px;
+    padding: 10px;
 }
 
 .bill-container, .tip-container, .people-container {
@@ -29,15 +30,42 @@ main {
 .amount {
     background-color: #f3f8fb;
     padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.amount:hover {
+    cursor: pointer;
+    border: 1px solid #26c2ad;
 }
 
 .icon {
     padding: 5px;
 }
 
-input[type=text] {
+.money, .number {
     border: none;
+    background-color: transparent;
+    outline: none;
+    color: #00494d;
+    text-align: right;
+}
+
+.custom {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #00494d;
+    text-align: right;
     background-color: #f3f8fb;
+    padding: 5px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.custom:hover {
+    cursor: pointer;
+    border: 1px solid #26c2ad;
 }
 
 .tip-container {
@@ -52,6 +80,12 @@ input[type=text] {
 
 .tip {
     margin-bottom: 10px;
+    width: 45%;
+}
+
+tip:hover {
+    background-color: #26c2ad;
+    cursor: pointer;
 }
 
 button {
@@ -65,6 +99,7 @@ button {
 
 button:hover {
     background-color: #26c2ad;
+    cursor: pointer;
 }
 
 .screen {

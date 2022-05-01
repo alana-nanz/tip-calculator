@@ -24,53 +24,55 @@
 
   <main>
     <div class="calculator">
-      <div class="bill-container">
-        <p>Bill</p>
-        <div class="amount">
-          <img class="icon" src="images/icon-dollar.svg" alt="dollar sign"/>
-          <input type=text>
+      <div class="calculator-container">
+        <div class="bill-container">
+          <p>Bill</p>
+          <div class="amount">
+            <img class="icon" src="images/icon-dollar.svg" alt="dollar sign"/>
+            <input class="money" type="number" min="0.00" step="0.01">
+          </div>
+        </div>
+        <div class="tip-container">
+          <p>Select Tip %</p>
+          <div class="percent-container">
+            <button class="tip">5%</button>
+            <button class="tip">10%</button>
+            <button class="tip">15%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <input class="custom" type="number" min="1" step="1">
+          </div>
+        </div>
+        <div class="people-container">
+          <p>Number of People</p>
+          <div class="amount">
+            <img class="icon" src="images/icon-person.svg" alt="person icon"/>
+            <input class="number" type="number" min="1" step="1">
+          </div>
         </div>
       </div>
-      <div class="tip-container">
-        <p>Select Tip %</p>
-        <div class="percent-container">
-          <button class="tip">5%</button>
-          <button class="tip">10%</button>
-          <button class="tip">15%</button>
-          <button class="tip">25%</button>
-          <button class="tip">50%</button>
-          <button class="tip">Custom</button>
-        </div>
-      </div>
-      <div class="people-container">
-        <p>Number of People</p>
-        <div class="amount">
-          <img class="icon" src="images/icon-person.svg" alt="person icon"/>
-          <input type=text>
-        </div>
-      </div>
-    </div>
 
-    <div class="screen">
-      <div class="screen-container">
-        <div class="screen-text">
-          <p class="total-label">Tip Amount</p>
-          <p class="total-info">/ person</p>
-        </div>
-        <div class="tip-amount">
+      <div class="screen">
+        <div class="screen-container">
+          <div class="screen-text">
+            <p class="total-label">Tip Amount</p>
+            <p class="total-info">/ person</p>
+          </div>
+          <div class="tip-amount">
 
+          </div>
         </div>
-      </div>
-      <div class="screen-container">
-        <div class="screen-text">
-          <p class="total-label"></pclass>Total</p>
-          <p class="total-info">/ person</p>
-        </div>
-        <div class="total">
+        <div class="screen-container">
+          <div class="screen-text">
+            <p class="total-label"></pclass>Total</p>
+            <p class="total-info">/ person</p>
+          </div>
+          <div class="total">
 
+          </div>
         </div>
+        <button class="reset">reset</button>
       </div>
-      <button class="reset">reset</button>
     </div>
   </main>
 </body>
