@@ -9,6 +9,11 @@ body {
     padding-bottom: 40px;
 }
 
+p {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
 header {
     padding: 30px 0 15px;
 }
@@ -17,21 +22,31 @@ header {
     background-color: white;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 30px;
+}
+
+/*****TOP HALF - CALCULATOR FUNCTIONS*****/
+.calculator-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .bill-container, .tip-container, .people-container {
-    margin: 20px 0 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .amount {
     background-color: #f3f8fb;
     padding: 5px;
     display: flex;
+    justify-content: space-between;
     border-radius: 5px;
+    width: 90%;
 }
 
 .amount:hover {
@@ -51,25 +66,14 @@ header {
     text-align: right;
 }
 
-.custom {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: #00494d;
-    text-align: right;
-    background-color: #f3f8fb;
-    padding: 5px;
-    border-radius: 5px;
-    width: 48%;
-}
-
-.custom:hover {
-    cursor: pointer;
-    border: 1px solid #26c2ad;
+/*****SELECT TIP*****/
+.tip-container {
+    margin-bottom: 20px;
 }
 
 .tip-container {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .percent-container {
@@ -81,6 +85,7 @@ header {
 .tip {
     margin-bottom: 10px;
     width: 45%;
+    height: 45px;
 }
 
 tip:hover {
@@ -102,6 +107,30 @@ button:hover {
     cursor: pointer;
 }
 
+.custom {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #00494d;
+    text-align: right;
+    background-color: #f3f8fb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 45px;
+    padding: 0;
+}
+
+::placeholder {
+    color: #7b9a95;
+}
+
+.custom:hover {
+    cursor: pointer;
+    border: 1px solid #26c2ad;
+}
+
+/*****SCREEN*****/
 .screen {
     background-color: #00474b;
     border-radius: 5px;
@@ -109,7 +138,6 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
     padding: 20px 0;
 }
 
@@ -134,4 +162,9 @@ button:hover {
     color: #00494d;
     text-transform: uppercase;
     width: 90%;
+}
+
+.reset:hover {
+    background-color: #9fe8df;
+    cursor: pointer;
 }
