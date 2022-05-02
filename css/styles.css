@@ -10,6 +10,11 @@ body {
     font-size: 16px;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 p {
     margin: 0 0 10px;
     padding: 0;
@@ -25,6 +30,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    width: 300px;
 }
 
 /*****TOP HALF - CALCULATOR FUNCTIONS*****/
@@ -70,9 +76,6 @@ header {
 /*****SELECT TIP*****/
 .tip-container {
     margin-bottom: 20px;
-}
-
-.tip-container {
     display: flex;
     flex-direction: column;
 }
@@ -172,14 +175,23 @@ button:hover {
     cursor: pointer;
 }
 
-/*****TABLET & DESKTOP STYLES*****/
-@media only screen and (min-width: 768px) {
+/*****DESKTOP STYLES*****/
+@media only screen and (min-width: 1025px) {
     .calculator {
         flex-direction: row;
         justify-content: space-between;
+        width: 915px;
     }
 
     .calculator-container, .screen {
-        width: 45%;
+        width: 48%;
+    }
+
+    .tip, .custom {
+        width: 30%;
+    }
+
+    .amount {
+        width: 95%;
     }
 }
